@@ -163,7 +163,7 @@ function App() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-cyan-400">Frontend</h3>
               <div className="space-y-3">
-                {['React', 'JavaScript', 'Tailwind CSS', 'Next.js', 'HTML5', 'CSS3'].map((skill) => (
+                {['React', 'JavaScript', 'Tailwind CSS', 'HTML5', 'CSS3'].map((skill) => (
                   <div key={skill} className="skill-item">
                     <span className="text-gray-300">{skill}</span>
                   </div>
@@ -177,7 +177,7 @@ function App() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-green-400">Backend</h3>
               <div className="space-y-3">
-                {['Node.js', 'Express.js', 'MongoDB', 'PostgreSQL', 'REST APIs', 'GraphQL'].map((skill) => (
+                {['Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'GraphQL'].map((skill) => (
                   <div key={skill} className="skill-item">
                     <span className="text-gray-300">{skill}</span>
                   </div>
@@ -191,7 +191,7 @@ function App() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-purple-400">Tools</h3>
               <div className="space-y-3">
-                {['Git', 'Docker', 'AWS', 'Vercel', 'Figma', 'VS Code'].map((skill) => (
+                {['Git', 'GitHub', 'Vercel', 'Figma', 'VS Code'].map((skill) => (
                   <div key={skill} className="skill-item">
                     <span className="text-gray-300">{skill}</span>
                   </div>
@@ -346,13 +346,13 @@ function App() {
             <div className="contact-card">
               <Phone className="text-green-400 mb-4" size={32} />
               <h3 className="text-lg font-semibold mb-2">Phone</h3>
-              <p className="text-gray-300">+1 (555) 123-4567</p>
+              <p className="text-gray-300">+91 9163525125</p>
             </div>
             
             <div className="contact-card">
               <MapPin className="text-purple-400 mb-4" size={32} />
               <h3 className="text-lg font-semibold mb-2">Location</h3>
-              <p className="text-gray-300">Vadodara, India</p>
+              <p className="text-gray-300">Kolkata, India</p>
             </div>
           </div>
           
