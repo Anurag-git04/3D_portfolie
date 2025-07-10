@@ -357,7 +357,7 @@ function App() {
           </div>
           
           <a
-            href="mailto:john.developer@email.com"
+            href="mailto:shawanurag155@gmail.com"
             className="btn-3d inline-flex items-center"
           >
             <Mail size={20} className="mr-2" />
@@ -370,7 +370,7 @@ function App() {
       <footer className="py-8 px-6 border-t border-gray-800">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-gray-400">
-            © 2024 John Developer. Crafted with passion and modern web technologies.
+            © 2024 Anurag Shaw. Crafted with passion and modern web technologies.
           </p>
         </div>
       </footer>
