@@ -163,7 +163,7 @@ function App() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-cyan-400">Frontend</h3>
               <div className="space-y-3">
-                {['React', 'JavaScript', 'Tailwind CSS', 'HTML5', 'CSS3'].map((skill) => (
+                {['React', 'JavaScript', 'Tailwind CSS', 'HTML5', 'CSS3','bootstrap','Chartjs'].map((skill) => (
                   <div key={skill} className="skill-item">
                     <span className="text-gray-300">{skill}</span>
                   </div>
@@ -177,7 +177,7 @@ function App() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-green-400">Backend</h3>
               <div className="space-y-3">
-                {['Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'GraphQL'].map((skill) => (
+                {['Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'multer','socket.io','Auth'].map((skill) => (
                   <div key={skill} className="skill-item">
                     <span className="text-gray-300">{skill}</span>
                   </div>
@@ -191,7 +191,7 @@ function App() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-purple-400">Tools</h3>
               <div className="space-y-3">
-                {['Git', 'GitHub', 'Vercel', 'Figma', 'VS Code'].map((skill) => (
+                {['Git', 'GitHub', 'Vercel', 'Postman', 'VS Code','Chrome Developer Tools','Debuggers'].map((skill) => (
                   <div key={skill} className="skill-item">
                     <span className="text-gray-300">{skill}</span>
                   </div>
