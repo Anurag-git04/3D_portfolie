@@ -26,7 +26,7 @@ function App() {
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Portfolio
+              Anurag
             </h1>
             <div className="hidden md:flex space-x-8">
               {['home', 'about', 'skills', 'projects', 'contact'].map((section) => (
@@ -103,10 +103,10 @@ function App() {
                   to stay at the forefront of web development.
                 </p>
                 <div className="flex space-x-4">
-                  <a href="#" className="social-icon">
+                  <a href="https://github.com/Anurag-git04" className="social-icon">
                     <Github size={20} />
                   </a>
-                  <a href="#" className="social-icon">
+                  <a href="https://www.linkedin.com/in/anuragshaw04/" className="social-icon">
                     <Linkedin size={20} />
                   </a>
                   <a href="#" className="social-icon">
@@ -230,7 +230,7 @@ function App() {
                     <ExternalLink size={16} />
                     Live Demo
                   </a>
-                  <a href="#" className="project-link">
+                  <a href="https://github.com/Anurag-git04/Ecommerce_Frontend.git" className="project-link">
                     <Github size={16} />
                     Code
                   </a>
@@ -258,7 +258,7 @@ function App() {
                     <ExternalLink size={16} />
                     Live Demo
                   </a>
-                  <a href="#" className="project-link">
+                  <a href="https://github.com/Anurag-git04/workasana_Frontend.git" className="project-link">
                     <Github size={16} />
                     Code
                   </a>
@@ -286,7 +286,7 @@ function App() {
                     <ExternalLink size={16} />
                     Live Demo
                   </a>
-                  <a href="#" className="project-link">
+                  <a href="https://github.com/Anurag-git04/meetfrontend" className="project-link">
                     <Github size={16} />
                     Code
                   </a>
@@ -299,10 +299,13 @@ function App() {
                 <User size={48} className="text-white" />
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-orange-400">Portfolio Website</h3>
+                <h3 className="text-2xl font-bold mb-3 text-orange-400">Lead Management System</h3>
                 <p className="text-gray-300 mb-4">
-                  This very portfolio you're viewing! Built with React, JavaScript, 
-                  and Tailwind CSS featuring 3D animations and responsive design.
+                  Developed a full-stack Lead Management System to streamline lead tracking and engagement workflows.
+                </p>
+                <p> Enabled adding new leads with detailed metadata and assigned team members for better accountability. </p>
+                <p>Visualized lead performance using Chart.js, displaying status-wise and time-based lead trends in 
+                  dynamic graphs. 
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {['React', 'JavaScript', 'Tailwind CSS', 'CSS3'].map((tech) => (
@@ -310,11 +313,11 @@ function App() {
                   ))}
                 </div>
                 <div className="flex space-x-4">
-                  <a href="#" className="project-link">
+                  <a href="https://lms-frontend-gilt.vercel.app/" className="project-link">
                     <ExternalLink size={16} />
                     Live Demo
                   </a>
-                  <a href="#" className="project-link">
+                  <a href="https://github.com/Anurag-git04/LMS_Frontend.git" className="project-link">
                     <Github size={16} />
                     Code
                   </a>
