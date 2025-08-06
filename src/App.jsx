@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Code, Briefcase, GraduationCap, User, MessageCircle } from 'lucide-react';
+import { ChevronDown, Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Code, Briefcase, GraduationCap, User, MessageCircle,FileText } from 'lucide-react';
+
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -46,7 +47,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      <section id="home" className="min-h-screen flex pt-2 items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900/20 to-cyan-900/20"></div>
         <div className="relative z-10 text-center px-6">
           <div className="floating-card mb-8">
@@ -103,14 +104,17 @@ function App() {
                   to stay at the forefront of web development.
                 </p>
                 <div className="flex space-x-4">
-                  <a href="https://github.com/Anurag-git04" className="social-icon">
+                  <a href="https://github.com/Anurag-git04" target="_blank" className="social-icon">
                     <Github size={20} />
                   </a>
-                  <a href="https://www.linkedin.com/in/anuragshaw04/" className="social-icon">
+                  <a href="https://www.linkedin.com/in/anuragshaw04/" target="_blank" className="social-icon">
                     <Linkedin size={20} />
                   </a>
-                  <a href="#" className="social-icon">
+                  <a href="shawanurag155@gmail.com" target="_blank" className="social-icon" >
                     <Mail size={20} />
+                  </a>
+                  <a href="https://drive.google.com/file/d/1xlyO11igSRP00fXNOI_Q6r2EeOy3U6En/view?usp=sharing" target="_blank" className="social-icon">
+                    <FileText size={20} />
                   </a>
                 </div>
               </div>
