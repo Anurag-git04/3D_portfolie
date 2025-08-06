@@ -253,7 +253,7 @@ function App() {
                   drag-and-drop functionality, and team collaboration features.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {['React', 'Socket.io', 'Express', 'PostgreSQL'].map((tech) => (
+                  {['React','Tailwind CSS', 'CSS3' ,'Express', 'Mongo DB'].map((tech) => ( 
                     <span key={tech} className="tech-tag">{tech}</span>
                   ))}
                 </div>
@@ -277,11 +277,10 @@ function App() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-green-400">Event Management or Meet up Application</h3>
                 <p className="text-gray-300 mb-4">
-                  Beautiful weather application with location-based forecasts, 
-                  interactive maps, and detailed weather analytics.
+                  A Lead Management System is a tool that helps businesses capture, track, and manage potential customer leads efficiently. It streamlines the sales process by organizing lead data, automating follow-ups, and improving conversion rates.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {['React', 'JavaScript', 'OpenWeather API', 'Charts.js'].map((tech) => (
+                  {['React', 'Tailwind CSS', 'CSS3','JavaScript','Express','Node js','Mongo DB', 'Charts.js'].map((tech) => ( 
                     <span key={tech} className="tech-tag">{tech}</span>
                   ))}
                 </div>
@@ -312,7 +311,7 @@ function App() {
                   dynamic graphs. 
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {['React', 'JavaScript', 'Tailwind CSS', 'CSS3'].map((tech) => (
+                  {['React', 'JavaScript', 'Tailwind CSS', 'CSS3','Express', 'Mongo DB'].map((tech) => (
                     <span key={tech} className="tech-tag">{tech}</span>
                   ))}
                 </div>
