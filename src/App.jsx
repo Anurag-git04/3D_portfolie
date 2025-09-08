@@ -167,7 +167,7 @@ function App() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-cyan-400">Frontend</h3>
               <div className="space-y-3">
-                {['React', 'JavaScript', 'Tailwind CSS', 'HTML5', 'CSS3','bootstrap','Chartjs'].map((skill) => (
+                {['React', 'JavaScript','TypeScript' ,'Tailwind CSS', 'HTML5', 'CSS3','bootstrap','Chart js','react-hook-form'].map((skill) => (
                   <div key={skill} className="skill-item">
                     <span className="text-gray-300">{skill}</span>
                   </div>
@@ -181,7 +181,7 @@ function App() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-green-400">Backend</h3>
               <div className="space-y-3">
-                {['Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'multer','socket.io','Auth'].map((skill) => (
+                {['Node.js', 'Express.js', 'MongoDB','PostgreSql','REST APIs','Prisma','socket.io','Google oauth',`GitHub's OAuth`].map((skill) => (
                   <div key={skill} className="skill-item">
                     <span className="text-gray-300">{skill}</span>
                   </div>
@@ -195,7 +195,7 @@ function App() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-purple-400">Tools</h3>
               <div className="space-y-3">
-                {['Git', 'GitHub', 'Vercel', 'Postman', 'VS Code','Chrome Developer Tools','Debuggers'].map((skill) => (
+                {['Git', 'GitHub', 'Vercel', 'Postman', 'VS Code','Chrome Developer Tools','React DevTool','Redux DevTool','Debuggers'].map((skill) => (
                   <div key={skill} className="skill-item">
                     <span className="text-gray-300">{skill}</span>
                   </div>
@@ -230,11 +230,11 @@ function App() {
                   ))}
                 </div>
                 <div className="flex space-x-4">
-                  <a href="https://ecommerce-frontend-green-nine.vercel.app/" className="project-link">
+                  <a href="https://ecommerce-frontend-green-nine.vercel.app/" target="_blank" className="project-link">
                     <ExternalLink size={16} />
                     Live Demo
                   </a>
-                  <a href="https://github.com/Anurag-git04/Ecommerce_Frontend.git" className="project-link">
+                  <a href="https://github.com/Anurag-git04/Ecommerce_Frontend.git" target="_blank" className="project-link">
                     <Github size={16} />
                     Code
                   </a>
@@ -247,10 +247,11 @@ function App() {
                 <MessageCircle size={48} className="text-white" />
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-purple-400">Task Management App</h3>
+                <h3 className="text-2xl font-bold mb-3 text-purple-400">Workasana App</h3>
                 <p className="text-gray-300 mb-4">
-                  Collaborative task management application with real-time updates, 
+                  Collaborative Project management application with real-time updates, 
                   drag-and-drop functionality, and team collaboration features.
+                  sample Login : new@gmail.com , password:111111
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {['React','Tailwind CSS', 'CSS3' ,'Express', 'Mongo DB'].map((tech) => ( 
@@ -258,11 +259,11 @@ function App() {
                   ))}
                 </div>
                 <div className="flex space-x-4">
-                  <a href="https://woekasana-frontend-ajkt.vercel.app/" className="project-link">
+                  <a href="https://woekasana-frontend-ajkt.vercel.app/" target="_blank" className="project-link">
                     <ExternalLink size={16} />
                     Live Demo
                   </a>
-                  <a href="https://github.com/Anurag-git04/workasana_Frontend.git" className="project-link">
+                  <a href="https://github.com/Anurag-git04/workasana_Frontend.git" target="_blank" className="project-link">
                     <Github size={16} />
                     Code
                   </a>
@@ -285,11 +286,11 @@ function App() {
                   ))}
                 </div>
                 <div className="flex space-x-4">
-                  <a href="https://meetfrontend.vercel.app/" className="project-link">
+                  <a href="https://meetfrontend.vercel.app/" target="_blank" className="project-link">
                     <ExternalLink size={16} />
                     Live Demo
                   </a>
-                  <a href="https://github.com/Anurag-git04/meetfrontend" className="project-link">
+                  <a href="https://github.com/Anurag-git04/meetfrontend" target="_blank" className="project-link">
                     <Github size={16} />
                     Code
                   </a>
@@ -316,11 +317,11 @@ function App() {
                   ))}
                 </div>
                 <div className="flex space-x-4">
-                  <a href="https://lms-frontend-gilt.vercel.app/" className="project-link">
+                  <a href="https://new-lead-frontend.vercel.app/" target="_blank" className="project-link">
                     <ExternalLink size={16} />
                     Live Demo
                   </a>
-                  <a href="https://github.com/Anurag-git04/LMS_Frontend.git" className="project-link">
+                  <a href="https://github.com/Anurag-git04/New_Lead_Frontend" target="_blank" className="project-link">
                     <Github size={16} />
                     Code
                   </a>
