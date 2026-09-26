@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { ChevronDown, Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Code, Briefcase, GraduationCap, User, MessageCircle, FileText, Menu, X, Download, Database, Brain, Cloud, Server } from 'lucide-react';
+import ChatBot from './ChatBot';
 
 
 // ─── Scroll Reveal Hook ───
@@ -635,6 +636,9 @@ function App() {
           </p>
         </div>
       </footer>
+
+      {/* ─── AI Chatbot Widget ─── */}
+      <ChatBot />
     </div>
   );
 }
