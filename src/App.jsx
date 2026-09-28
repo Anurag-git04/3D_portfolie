@@ -281,38 +281,67 @@ function App() {
 
           <div className="max-w-3xl mx-auto">
             <div className="reveal delay-100">
-              <div className="relative pl-8 border-l-2 border-cyan-500/30">
-                <div className="absolute -left-[7px] top-1">
-                  <div className="timeline-dot"></div>
-                </div>
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700 mb-8">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-                    <h3 className="text-xl font-bold text-cyan-400">Full Stack Developer + AI</h3>
-                    <span className="text-sm text-gray-400 mt-1 sm:mt-0">10/2025 – Present</span>
+              <div className="relative border-l-2 border-cyan-500/30">
+                <div className="relative pl-8 mb-12">
+                  <div className="absolute -left-[7px] top-1">
+                    <div className="timeline-dot"></div>
                   </div>
-                  <p className="text-gray-300 font-medium mb-4">Pelocal Fintech · Noida, India</p>
-                  <ul className="space-y-3 text-gray-300 text-sm leading-relaxed">
-                    <li className="flex items-start">
-                      <span className="text-cyan-400 mr-2 mt-1 flex-shrink-0">▹</span>
-                      <span><strong>AI Voice &amp; WhatsApp Bots:</strong> Contributed to an AI-powered outbound voice agent and WhatsApp bot for automated customer/collections interactions, including prompt behavior design and transcript-driven debugging.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-cyan-400 mr-2 mt-1 flex-shrink-0">▹</span>
-                      <span><strong>Call Report Analytics Dashboard:</strong> Built a full-stack Next.js application that ingests raw call-report data and produces visual analytics with multi-sheet Excel exports (MongoDB, ExcelJS, Recharts) and email-based sharing via Nodemailer.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-cyan-400 mr-2 mt-1 flex-shrink-0">▹</span>
-                      <span><strong>Report Automation Service:</strong> Developed a FastAPI service using APScheduler to automatically fetch and email daily call reports on a fixed schedule.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-cyan-400 mr-2 mt-1 flex-shrink-0">▹</span>
-                      <span><strong>Knowledge Base &amp; Storage:</strong> Built an internal Knowledge Base and implemented secure call-recording storage using GCP.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-cyan-400 mr-2 mt-1 flex-shrink-0">▹</span>
-                      <span><strong>Infrastructure:</strong> Used Docker for containerized services, Redis for caching, and deployed applications to AWS.</span>
-                    </li>
-                  </ul>
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                      <h3 className="text-xl font-bold text-cyan-400">Full Stack Developer + AI</h3>
+                      <span className="text-sm text-gray-400 mt-1 sm:mt-0">10/2025 – Present</span>
+                    </div>
+                    <p className="text-gray-300 font-medium mb-4">Pelocal Fintech · Noida, India</p>
+                    <ul className="space-y-3 text-gray-300 text-sm leading-relaxed">
+                      <li className="flex items-start">
+                        <span className="text-cyan-400 mr-2 mt-1 flex-shrink-0">▹</span>
+                        <span><strong>AI Voice &amp; WhatsApp Bots:</strong> Contributed to an AI-powered outbound voice agent and WhatsApp bot for automated customer/collections interactions, including prompt behavior design and transcript-driven debugging.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-cyan-400 mr-2 mt-1 flex-shrink-0">▹</span>
+                        <span><strong>Call Report Analytics Dashboard:</strong> Built a full-stack Next.js application that ingests raw call-report data and produces visual analytics with multi-sheet Excel exports (MongoDB, ExcelJS, Recharts) and email-based sharing via Nodemailer.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-cyan-400 mr-2 mt-1 flex-shrink-0">▹</span>
+                        <span><strong>Report Automation Service:</strong> Developed a FastAPI service using APScheduler to automatically fetch and email daily call reports on a fixed schedule.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-cyan-400 mr-2 mt-1 flex-shrink-0">▹</span>
+                        <span><strong>Knowledge Base &amp; Storage:</strong> Built an internal Knowledge Base and implemented secure call-recording storage using GCP.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-cyan-400 mr-2 mt-1 flex-shrink-0">▹</span>
+                        <span><strong>Infrastructure:</strong> Used Docker for containerized services, Redis for caching, and deployed applications to AWS.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="relative pl-8">
+                  <div className="absolute -left-[7px] top-1">
+                    <div className="timeline-dot"></div>
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                      <h3 className="text-xl font-bold text-cyan-400">Full Stack Developer</h3>
+                      <span className="text-sm text-gray-400 mt-1 sm:mt-0">06/2025 – 09/2025</span>
+                    </div>
+                    <p className="text-gray-300 font-medium mb-4">Design.Technology</p>
+                    <ul className="space-y-3 text-gray-300 text-sm leading-relaxed">
+                      <li className="flex items-start">
+                        <span className="text-cyan-400 mr-2 mt-1 flex-shrink-0">▹</span>
+                        <span><strong>Web Applications:</strong> Built full-stack web applications using React (frontend), Next.js, and Prisma (backend ORM).</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-cyan-400 mr-2 mt-1 flex-shrink-0">▹</span>
+                        <span><strong>E-commerce Platform:</strong> Developed an e-commerce medicine platform, covering product listings, cart, and order flows.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-cyan-400 mr-2 mt-1 flex-shrink-0">▹</span>
+                        <span><strong>Healthcare Solution:</strong> Built a doctor discovery/booking website for a U.S.-based client.</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
