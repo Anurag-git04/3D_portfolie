@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { ChevronDown, Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Code, Briefcase, GraduationCap, User, MessageCircle, FileText, Menu, X, Download, Database, Brain, Cloud, Server } from 'lucide-react';
 import ChatBot from './ChatBot';
+import CodeBox from './CodeBox';
+import { SiReact, SiNodedotjs, SiMongodb, SiNextdotjs, SiPostgresql, SiPython } from 'react-icons/si';
 
 
 // ─── Scroll Reveal Hook ───
@@ -94,9 +96,20 @@ function App() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Anurag
-            </h1>
+            <div className="flex items-center">
+              <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }} className="flex items-center gap-3 group">
+                <div className="w-8 h-8 rounded-full bg-[#0a0a0a] flex items-center justify-center text-cyan-400 font-black text-lg">
+                  A
+                </div>
+                <span className="text-xl font-bold text-white tracking-wide">
+                  Anurag Shaw.
+                </span>
+              </a>
+              <span className="ml-3 hidden sm:inline-flex items-center px-2 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-medium">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-400 mr-1.5 animate-pulse"></span>
+                Available
+              </span>
+            </div>
 
             {/* Desktop Nav */}
             <div className="hidden md:flex items-center space-x-8">
@@ -104,7 +117,7 @@ function App() {
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
-                  className={`capitalize transition-all duration-300 hover:text-cyan-400 ${activeSection === section ? 'text-cyan-400' : 'text-gray-300'
+                  className={`capitalize text-sm font-medium transition-all duration-300 hover:text-cyan-400 ${activeSection === section ? 'text-cyan-400' : 'text-gray-300'
                     }`}
                 >
                   {section}
@@ -156,47 +169,94 @@ function App() {
       </div>
 
       {/* ─── Hero Section ─── */}
-      <section id="home" className="min-h-screen flex pt-2 items-center justify-center relative overflow-hidden">
+      <section id="home" className="min-h-screen flex items-center relative overflow-hidden" style={{ paddingTop: '100px', paddingBottom: '40px' }}>
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900/20 to-cyan-900/20"></div>
-        <div className="relative z-10 text-center px-6">
-          <div className="floating-card mb-8">
-            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 p-1 mb-6">
-              <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center">
-                <User size={48} className="text-cyan-400" />
+
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-10 flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+
+          {/* ── Left: Text Content ── */}
+          <div className="flex-1 min-w-0">
+            {/* Badge */}
+            <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-medium mb-6">
+              <span className="w-2 h-2 rounded-full bg-cyan-400 mr-2 animate-pulse"></span>
+              Full-Stack Developer + AI • 1.5+ Years Experience
+            </div>
+
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
+              Building scalable<br />
+              <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">MERN SaaS &amp; AI</span><br />
+              systems<span className="text-cyan-400">.</span>
+            </h1>
+
+            <p className="text-base lg:text-lg text-gray-400 mb-8 max-w-lg leading-relaxed">
+              Hi, I'm <strong className="text-white">Anurag Shaw</strong>. I engineer production-grade web applications with
+              the <strong className="text-white">MERN Stack</strong>, <strong className="text-white">Next.js</strong>, and <strong className="text-white">LangChain RAG</strong> pipelines.
+            </p>
+
+            {/* Tech Pills */}
+            <div className="flex flex-wrap gap-2 mb-8">
+              {[
+                { icon: <SiReact size={14} className="text-cyan-400" />, label: 'React' },
+                { icon: <SiNodedotjs size={14} className="text-green-500" />, label: 'Node.js' },
+                { icon: <SiMongodb size={14} className="text-emerald-500" />, label: 'MongoDB' },
+                { icon: <SiNextdotjs size={14} className="text-gray-200" />, label: 'Next.js' },
+                { icon: <SiPostgresql size={14} className="text-blue-400" />, label: 'PostgreSQL' },
+                { icon: <SiPython size={14} className="text-blue-500" />, label: 'Python' },
+              ].map((pill) => (
+                <span key={pill.label} className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gray-800/80 border border-gray-700 text-gray-300 text-xs font-medium">
+                  {pill.icon} {pill.label}
+                </span>
+              ))}
+            </div>
+
+            {/* Action Buttons */}
+            <div className="flex flex-wrap items-center gap-3 mb-12">
+              <button
+                onClick={() => scrollToSection('projects')}
+                className="px-6 py-3 rounded-lg bg-cyan-500 hover:bg-cyan-600 text-gray-900 font-bold text-sm inline-flex items-center gap-2 transition-colors"
+              >
+                View Projects <ChevronDown size={18} className="-rotate-90" />
+              </button>
+              <a
+                href="https://drive.google.com/file/d/1xlyO11igSRP00fXNOI_Q6r2EeOy3U6En/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 rounded-lg bg-gray-800 hover:bg-gray-700 border border-gray-700 text-white font-medium text-sm inline-flex items-center gap-2 transition-colors"
+              >
+                <FileText size={16} className="text-cyan-400" /> View Resume
+              </a>
+              <a href="https://github.com/Anurag-git04" target="_blank" rel="noopener noreferrer" className="p-3 rounded-lg bg-gray-800 hover:bg-gray-700 border border-gray-700 text-gray-300 hover:text-white transition-colors">
+                <Github size={18} />
+              </a>
+              <a href="https://www.linkedin.com/in/anuragshaw04/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-lg bg-gray-800 hover:bg-gray-700 border border-gray-700 text-gray-300 hover:text-white transition-colors">
+                <Linkedin size={18} />
+              </a>
+            </div>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-6 pt-6 border-t border-gray-800">
+              <div>
+                <h4 className="text-white font-bold text-lg">1.5+ <span className="text-cyan-400">Years</span></h4>
+                <p className="text-gray-500 text-xs mt-0.5">Software Engineering</p>
+              </div>
+              <div>
+                <h4 className="text-white font-bold text-lg">MERN &amp; Next</h4>
+                <p className="text-gray-500 text-xs mt-0.5">Full-Stack Core</p>
+              </div>
+              <div>
+                <h4 className="text-white font-bold text-lg">GenAI</h4>
+                <p className="text-gray-500 text-xs mt-0.5">LangGraph &amp; RAG</p>
               </div>
             </div>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-cyan-400 to-blue-500 bg-clip-text text-transparent glow-text">
-            Anurag Shaw
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-4 max-w-2xl mx-auto font-medium">
-            Full Stack Developer + AI
-          </p>
-          <p className="text-lg text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Building scalable web applications and AI-driven automation with
-            Next.js, React, FastAPI, LangChain &amp; cloud platforms.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button
-              onClick={() => scrollToSection('about')}
-              className="btn-3d group"
-            >
-              Explore My Work
-              <ChevronDown size={20} className="ml-2 group-hover:translate-y-1 transition-transform" />
-            </button>
-            <a
-              href="https://drive.google.com/file/d/1xlyO11igSRP00fXNOI_Q6r2EeOy3U6En/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 rounded-xl font-semibold border border-cyan-500/50 text-cyan-400 hover:bg-cyan-500/10 transition-all duration-300 inline-flex items-center"
-            >
-              <FileText size={20} className="mr-2" />
-              View Resume
-            </a>
+
+          {/* ── Right: Code Box ── */}
+          <div className="hidden lg:block w-full lg:w-[520px] flex-shrink-0">
+            <CodeBox />
           </div>
         </div>
 
-        {/* Floating Elements */}
+        {/* Floating ambient blurs */}
         <div className="absolute top-20 left-10 w-20 h-20 bg-cyan-400/10 rounded-full blur-xl animate-pulse"></div>
         <div className="absolute bottom-40 right-20 w-32 h-32 bg-blue-500/10 rounded-full blur-xl animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 right-10 w-16 h-16 bg-purple-500/10 rounded-full blur-xl animate-pulse delay-500"></div>
