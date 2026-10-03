@@ -503,6 +503,38 @@ function App() {
 
           <div className="grid md:grid-cols-2 gap-8">
 
+            {/* AI Voice Interview Coach */}
+            <div className="project-card reveal delay-100">
+              <div className="project-image bg-gradient-to-br from-indigo-500 to-purple-600 h-48 rounded-t-xl flex items-center justify-center">
+                <Brain size={48} className="text-white" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-indigo-400">AI Voice Interview Coach</h3>
+                <p className="text-gray-300 mb-4">
+                  Voice-based interview practice app with Groq Whisper STT, adaptive LLM-generated questions, real-time speech analytics, and a rubric-based evaluator scoring relevance and clarity.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {['Next.js', 'TypeScript', 'FastAPI', 'Groq API', 'MongoDB', 'Recharts'].map((tech) => (
+                    <span key={tech} className="tech-tag">{tech}</span>
+                  ))}
+                </div>
+                <div className="flex space-x-4">
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="project-link">
+                    <ExternalLink size={16} />
+                    Demo
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="project-link">
+                    <Github size={16} />
+                    Frontend
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="project-link">
+                    <Github size={16} />
+                    Backend
+                  </a>
+                </div>
+              </div>
+            </div>
+
             {/* Memory Photo Album */}
             <div className="project-card reveal delay-100">
               <div className="project-image bg-gradient-to-br from-violet-500 to-fuchsia-600 h-48 rounded-t-xl flex items-center justify-center">
